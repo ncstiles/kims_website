@@ -1,29 +1,21 @@
-.pic {
-    width: 400px;
-    height: auto;
-}
-
 body {
     background-color: #f4e3d2;
 }
 
 div {
     text-align: center;
+    display: flex;
     color: #333;
 }
 
 .categories {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-
+    flex-direction: column;
     border: 5px solid #a9a8a8;
     background: #d9dbda;
     margin: 10px;
     padding-top: 30px;
 
-    padding-bottom: 30px;
-
+    padding-bottom: 30px; 
 }
 
 .yellow-beige {
@@ -34,38 +26,41 @@ div {
     background-color: #faf0e6;
 }
 
-
-#all-projects {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
+.proj-pic {
+    width: 300px;
+    height: auto;
 }
 
-.project {
-    padding: 20px;
-    border: 5px solid #bcb9b9;
-    font-weight: bold;
-
-}
-
-
-.pfp {
+.person-pic {
     width: 200px;
     height: auto;
     padding: 10px;
 }
 
-.paragraph {
-    padding: 10px;
-    margin-top: 50px;
+#biography {
+    justify-content: space-between;
+    align-items: center;
 }
 
 
-.header {
-    display:block;
+
+#all-projects {
+    justify-content: space-between;
+    margin: 50px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 
-.flex {
-    display:flex;
+.project {
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    padding: 20px;
+    border: 5px solid #bcb9b9;
+    font-weight: bold;
+    margin: 10px;
+    flex-shrink: 0;
 }
+
+
